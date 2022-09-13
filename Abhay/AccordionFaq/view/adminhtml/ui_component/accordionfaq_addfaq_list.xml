@@ -78,6 +78,19 @@
 					</item>
 				</argument>
 			</action>
+			<action name="delete">
+				<argument name="data" xsi:type="array">
+					<item name="config" xsi:type="array">
+						<item name="type" xsi:type="string">delete</item>
+						<item name="label" xsi:type="string" translate="true">Delete</item>
+						<item name="url" xsi:type="url" path="accordionfaq/addfaq/MassDelete"/>
+						<item name="confirm" xsi:type="array">
+							<item name="title" xsi:type="string" translate="true">Delete</item>
+							<item name="message" xsi:type="string" translate="true">Do you want to delete selected FAQs?</item>
+						</item>
+					</item>
+				</argument>
+			</action>
 		</massaction>
     </container>
     <columns name="accordionfaq_addfaq_columns">
