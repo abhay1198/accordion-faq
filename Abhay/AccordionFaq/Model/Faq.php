@@ -9,7 +9,6 @@
 
 namespace Abhay\AccordionFaq\Model;
 
-
 use Magento\Framework\Model\AbstractModel;
 use Abhay\AccordionFaq\Api\Data\FaqInterface;
 use Magento\Framework\DataObject\IdentityInterface;
