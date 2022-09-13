@@ -1,0 +1,16 @@
+{
+    "abhay_accordionfaq": {
+        "column": {
+            "id": true,
+            "faq": true,
+            "body": true,
+            "status": true,
+            "created_at": true,
+            "updated_at": true,
+            "sort_order": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}

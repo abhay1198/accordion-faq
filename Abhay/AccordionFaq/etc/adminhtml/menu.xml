@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package     Abhay/AccordionFaq
+ * @version     1.0.0
+ * @author      Abhay
+ * @copyright   Copyright © 2021. All Rights Reserved.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="Abhay_AccordionFaq::faq" 
+             title="Accordion FAQ" 
+             module="Abhay_AccordionFaq" 
+             sortOrder="25" 
+             resource="Abhay_AccordionFaq::faq"/>
+
+    	<add id="Abhay_AccordionFaq::addfaq" 
+             title="Manage FAQ" 
+             module="Abhay_AccordionFaq" 
+             sortOrder="1" parent="Abhay_AccordionFaq::faq" 
+             action="accordionfaq/addfaq/index" 
+             resource="Abhay_AccordionFaq::addfaq" />
+   	</menu>
+</config>
