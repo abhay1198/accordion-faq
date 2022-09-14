@@ -40,11 +40,12 @@
             </argument>
         </argument>
     </dataSource>
-    <container name="listing_top">
-        <bookmark name="bookmarks"/>
-        <columnsControls name="columns_controls"/>
-        <filterSearch name="fulltext"/>
-        <filters name="listing_filters"/>
+    <listingToolbar name="listing_top">
+		<argument name="data" xsi:type="array">
+            <item name="config" xsi:type="array">
+                <item name="sticky" xsi:type="boolean">false</item>
+            </item>
+        </argument>
 		<massaction name="listing_massaction">
 			<argument name="data" xsi:type="array">
 				<item name="config" xsi:type="array">
@@ -92,7 +93,11 @@
 				</argument>
 			</action>
 		</massaction>
-    </container>
+     	<bookmark name="bookmark"/>
+        <columnsControls name="columns_controls"/>
+        <filters name="listing_filters"/>
+        <paging name="listing_paging"/>
+    </listingToolbar>
     <columns name="accordionfaq_addfaq_columns">
         <selectionsColumn name="faqid">
 			<argument name="data" xsi:type="array">
